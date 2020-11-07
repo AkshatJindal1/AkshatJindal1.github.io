@@ -12,15 +12,7 @@ import { skills } from '../../editable-stuff/configurations.json'
 function Skills() {
 	const skillsTabRef = React.useRef()
 	const [isScrolled, setIsScrolled] = React.useState(false)
-	//const navbarDimensions = useResizeObserver(navbarMenuRef);
 
-	// useScrollPosition(
-	// 	({ prevPos, currPos }) => {
-	// 		if (!isScrolled && currPos.y - 400 < 0) setIsScrolled(true)
-	// 	},
-	// 	[],
-	// 	skillsTabRef
-	// )
 	return (
 		<Jumbotron
 			ref={skillsTabRef}
@@ -36,6 +28,7 @@ function Skills() {
 					className='skills-tabs'
 					defaultActiveKey='hard-skills'
 					id='skills-tabs'
+					justify
 				>
 					<Tab
 						tabClassName='skills-tab lead'

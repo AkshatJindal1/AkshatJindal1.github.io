@@ -53,6 +53,7 @@
 			resize: both;
 			overflow: auto;
 		}
+    
     </style>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <meta property="twitter:image" content="%PUBLIC_URL%/social-image.png" />
@@ -69,8 +70,6 @@
                 $("body").on("submit", ".contact-form", function (e) {
                     e.preventDefault();
                     var form = $(e.target);
-                    console.log("123")
-                    console.log(form)
                     $.post(form.attr("action"), form.serialize(), function (res) {
                         console.log(res);
                         if (res.result == 'success') {

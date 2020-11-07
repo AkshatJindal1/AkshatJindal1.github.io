@@ -15,8 +15,8 @@ import BlogPost from "./components/blog/BlogPost";
 import Contact from "./components/home/Contact";
 import Experience from './components/home/Experience'
 import Footer from "./components/Footer";
+import Leadership from "./components/home/Leadership";
 import MainBody from "./components/home/MainBody";
-import Media from "./components/home/Media";
 import Navbar from "./components/Navbar";
 import Project from "./components/home/Project";
 import ProjectCard from "./components/home/ProjectCard";
@@ -30,8 +30,9 @@ const Home = () => {
       <Experience/>
       <Project />
       <Skills/>
+      <Leadership/>
 	  {/* <Media /> */}
-	  <Contact />
+	    <Contact />
     </Fragment>
   );
 };

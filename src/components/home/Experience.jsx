@@ -1,7 +1,8 @@
 import React, { Profiler, useEffect, useState } from 'react'
 
-// import Boeing from '../../editable-stuff/boeing.jpg'
-// import Dell from '../../editable-stuff/dell-logo.jpg'
+import Deloitte from '../../editable-stuff/deloitte.png'
+import Sapient from '../../editable-stuff/sapient.png'
+
 const divStyle = {
 	display: 'flex',
 	flexDirection: 'row',
@@ -24,11 +25,11 @@ const Experience = () => {
 						<div className='row' style={divStyle}>
 							<div className='col text-center'>
 								<img
-									// className="border border-secondary rounded-circle"
-									// src={Dell}
-									alt='dell technologies logo'
-									width='420'
-									height='70'
+									// className='border border-secondary rounded-circle'
+									src={Sapient}
+									alt='Publicis Sapient logo'
+									width='320'
+									// height='170'
 								/>
 								<br />
 								<br />
@@ -36,19 +37,19 @@ const Experience = () => {
 									className='lead text-center'
 									style={{ fontSize: '22px' }}
 								>
-									Software Engineer Intern
+									Software Development Engineer
 									<br />
-									June - July 2020
+									June 2019 - Prsent
 								</p>
 								{/* <h3>Dell Technologies</h3> */}
 							</div>
 							<div className='col text-center'>
 								<img
-									// className="border border-secondary rounded-circle"
-									// src={Boeing}
-									alt='boeing logo'
-									width='300'
-									height='80'
+									// className='border border-secondary rounded-circle'
+									src={Deloitte}
+									alt='Deloitte logo'
+									width='320'
+									// height='70'
 								/>
 								<br />
 								<br />
@@ -56,9 +57,9 @@ const Experience = () => {
 									className='lead text-center'
 									style={{ fontSize: '22px' }}
 								>
-									Software Engineer Intern
+									Technology Consultant
 									<br />
-									May - August 2019
+									May - July 2018
 								</p>
 								{/* <h3>Boeing</h3> */}
 							</div>

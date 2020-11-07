@@ -5,18 +5,6 @@ import {
 } from '../../editable-stuff/configurations.json'
 
 class Contact extends React.Component {
-	componentDidMount() {
-		const head = document.querySelector('head')
-		const script = document.createElement('script')
-		script.setAttribute(
-			'src',
-			'https://assets.calendly.com/assets/external/widget.js'
-		)
-		head.appendChild(script)
-	}
-
-	componentWillUnmount() {}
-
 	render() {
 		return (
 			<div
@@ -29,7 +17,7 @@ class Contact extends React.Component {
 						<p className='lead'>
 							{contactDescription}
 							<a
-								href='mailto:ajindal.iitkgpgmail.com@'
+								href='mailto:akshat.jindal.iitkgp@gmail.com'
 								style={{ color: '#606060' }}
 							>
 								here!
@@ -38,6 +26,18 @@ class Contact extends React.Component {
 					</div>
 				</center>
 				<center>
+					<aside className='four columns footer-widgets'>
+						<div className='widget widget_contact'>
+							<h4>Address and Phone</h4>
+							<p className='address'>
+								Akshat Jindal
+								<br />
+								Bangalore, India <br />
+							</p>
+						</div>
+					</aside>
+				</center>
+				{/* <center>
 					<div className='col-5'>
 						<form
 							action='https://script.google.com/macros/s/AKfycbyb6tXBdQp6OCHtzntQYE7ZRBvQrrQEeDeiJigGlLekboHZZFc/exec'
@@ -111,16 +111,7 @@ class Contact extends React.Component {
 							<br />
 						</div>
 					</div>
-				</center>
-				{/* <div>
-					<div id='schedule_form' mb-0>
-						<div
-							className='calendly-inline-widget'
-							data-url='https://calendly.com/jefferyjohn/45-minute-meeting'
-							style={{ minWidth: '320px', height: '800px' }}
-						/>
-					</div>
-				</div> */}
+				</center> */}
 			</div>
 		)
 	}

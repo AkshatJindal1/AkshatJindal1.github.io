@@ -22,13 +22,7 @@
     {
       "id": 2,
       "image": "fa-linkedin",
-      "url": "https://www.linkedin.com/in/jefferyjohn/",
-      "style": "socialicons"
-    },
-    {
-      "id": 3,
-      "image": "fa-twitter",
-      "url": "https://www.twitter.com/jefferyjohn_/",
+      "url": "https://www.  linkedin.com/in/akshat-jindal07/",
       "style": "socialicons"
     }
   ],
@@ -37,15 +31,18 @@
   "instaLink": "https://www.instagram.com/",
   "instaUsername": "_trippy_lens",
   "instaQuerry": "/?__a=1",
-  "aboutDescription": "Hello! My name is Jeffery John, and I am a 3rd year computer science and public policy student at the University of Georgia. I hope to pursue additional studies in cyber security and law, with the goal of assisting in meaningful policy change.",
+  "profilePic": "../../editable-stuff/akshat.jpg",
+  "imgSize": 375,
+  "aboutDescription": "Hello! My name is Akshat Jindal, and I am a graduate from Indian Institute of Technology, Kharagpur, India. Currently I am working as a full stack developer at Publicis Sapient. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering!",
   "projectHeading": "Recent Projects",
-  "gitHubLink": "https://api.github.com/users/",
+  "gitHubLink": "https://api.github.com/",
   "gitHubUsername": "AkshatJindal1",
   "gitHubQuery": "/repos?sort=updated&direction=desc",
-  "projectsLength": 4,
+  "projectsLength": 0,
+  "specificRepos": ["AkshatJindal1.github.io", "car-damage-detector", "NLP-with-tensorflow", "JwtAuthenticationDemo"],
   "mediaHeading": "Featured Media",
   "contactHeading": "Contact Me",
-  "contactDescription": "Please don't hesitate to schedule a meeting through Calendly. This will create an event on my calendar, as well as send an invitation for the platform of your choice to both of us. Alternatively, feel free to reach out directly by email ",
+  "contactDescription": "Have a question? Need a tip? Feel free to reach out to me or send an email ",
   "showNavigationbar": true,
   "showBlog": true,
 
@@ -53,14 +50,16 @@
     "show": true,
     "heading": "Skills",
     "hardSkills": [
-      { "name": "Python", "value": 90 },
-      { "name": "SQL", "value": 75 },
+      { "name": "Java", "value": 90 },
+      { "name": "Python", "value": 75 },
       { "name": "Data Structures", "value": 85 },
       { "name": "C/C++", "value": 65 },
-      { "name": "JavaScript", "value": 90 },
+      { "name": "JavaScript", "value": 80 },
+      { "name": "Springboot", "value": 85},
       { "name": "React", "value": 65 },
-      { "name": "HTML/CSS", "value": 55 },
-      { "name": "C#", "value": 80 }
+      { "name": "Scala", "value": 60},
+      { "name": "MongoDB", "value": 70},
+      { "name": "AWS", "value": 70}
     ],
     "softSkills": [
       { "name": "Goal-Oriented", "value": 80 },
@@ -72,5 +71,9 @@
       { "name": "Organization", "value": 70 },
       { "name": "Creativity", "value": 90 }
     ]
+  },
+
+  "leadership": {
+    "heading": "Leadership"
   }
 }
