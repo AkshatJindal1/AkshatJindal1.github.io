@@ -39,7 +39,7 @@ const Experience = () => {
 								>
 									Software Development Engineer
 									<br />
-									June 2019 - Prsent
+									June 2019 - Present
 								</p>
 								{/* <h3>Dell Technologies</h3> */}
 							</div>

@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react'
 
 import Carousel from 'react-bootstrap/Carousel'
 import Microlink from '@microlink/react'
+import college from '../../editable-stuff/college.jpg'
 import { leadership } from '../../editable-stuff/configurations.json'
+import office from '../../editable-stuff/office.jpg'
+import office2 from '../../editable-stuff/office2.jpg'
+import springfest from '../../editable-stuff/springfest.JPG'
 import styled from 'styled-components'
-import testmage from '../../editable-stuff/social-image.PNG'
 
 const LinkPreview = styled(Microlink)`
 	max-width: 90%;
@@ -56,11 +59,37 @@ class Leadership extends React.Component {
 
 								<div className='col d-lg-inline align-self-center'>
 									<Carousel>
-										<Carousel.Item>
-											{/* <div className="col d-none d-lg-inline align-self-center"> */}
+										<Carousel.Item interval={4000}>
 											<img
 												className='rounded'
-												src={testmage}
+												src={springfest}
+												alt='culture'
+												width='615'
+												height='450'
+											/>
+										</Carousel.Item>
+										<Carousel.Item interval={4000}>
+											<img
+												className='rounded'
+												src={office}
+												alt='culture'
+												width='615'
+												height='450'
+											/>
+										</Carousel.Item>
+										<Carousel.Item interval={4000}>
+											<img
+												className='rounded'
+												src={office2}
+												alt='culture'
+												width='615'
+												height='450'
+											/>
+										</Carousel.Item>
+										<Carousel.Item interval={4000}>
+											<img
+												className='rounded'
+												src={college}
 												alt='culture'
 												width='615'
 												height='450'
