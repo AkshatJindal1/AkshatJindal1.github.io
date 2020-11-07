@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import './App.css';
+import "./App.css";
 
 import { BrowserRouter, Route } from "react-router-dom";
 import React, { Fragment } from "react";

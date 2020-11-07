@@ -1,97 +1,95 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=1024">
-  <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link rel="stylesheet" href="%PUBLIC_URL%/css/layout.css">
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=1024">
+    <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          rel="stylesheet" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/layout.css">
 
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="index.html " />`
-  <link rel="apple-touch-icon" href="logo192.png" />
-
-  <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.7.1.js"></script>
-
-  <style type="text/css">
-    .Table {
-      display: table;
-    }
-
-    .Title {
-      display: table-caption;
-      text-align: center;
-      font-size: larger;
-      resize: both;
-      overflow: auto;
-    }
-
-    .Heading {
-      display: table-row;
-      text-align: center;
-      resize: both;
-      overflow: auto;
-    }
-
-    .Row {
-      display: table-row;
-      resize: both;
-      overflow: auto;
-    }
-
-    .Cell {
-      display: table-cell;
-      padding-left: 5px;
-      padding-right: 5px;
-      resize: both;
-      overflow: auto;
-    }
-
-    .Media {
-      resize: both;
-      overflow: auto;
-    }
-  </style>
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <meta property="twitter:image" content="%PUBLIC_URL%/social-image.png" />
-  <meta property="og:image" content="%PUBLIC_URL%/social-image.png" />
-  <title>Akshat Jindal</title>
-</head>
-
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-    <script>
-        (function ($) {
-          $("body").on("submit", ".contact-form", function (e) {
-            e.preventDefault();
-            var form = $(e.target);
-            console.log("123")
-            console.log(form)
-            $.post(form.attr("action"), form.serialize(), function (res) {
-              console.log(res);
-              if (res.result == 'success') {
-                $('#image-loader').fadeOut();
-                $('#message-warning').hide();
-                $('#contactForm').fadeOut();
-                $('#message-success').fadeIn();
-              }
-              // There was an error
-              else {
-                $('#image-loader').fadeOut();
-                $('#message-warning').html(msg);
-                $('#message-warning').fadeIn();
-              }
-            });
-          })
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+          content="index.html " />
+    <link rel="apple-touch-icon" href="logo192.png" />
+	
+	<script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.7.1.js"></script>
+	
+    <style type="text/css">
+        .Table {
+            display: table;
         }
-        )(jQuery);
-    </script>
-  </div>
-</body>
 
+        .Title {
+            display: table-caption;
+            text-align: center;
+            font-size: larger;
+			resize: both;
+			overflow: auto;
+        }
+
+        .Heading {
+            display: table-row;
+            text-align: center;
+			resize: both;
+			overflow: auto;
+        }
+
+        .Row {
+            display: table-row;
+			resize: both;
+			overflow: auto;
+        }
+
+        .Cell {
+            display: table-cell;
+            padding-left: 5px;
+            padding-right: 5px;
+			resize: both;
+			overflow: auto;
+        }
+		.Media {
+			resize: both;
+			overflow: auto;
+		}
+    </style>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta property="twitter:image" content="%PUBLIC_URL%/social-image.png" />
+    <meta property="og:image" content="%PUBLIC_URL%/social-image.png" />
+    <title>Akshat Jindal</title>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+        <script>
+            (function ($) {
+                $("body").on("submit", ".contact-form", function (e) {
+                    e.preventDefault();
+                    var form = $(e.target);
+                    console.log("123")
+                    console.log(form)
+                    $.post(form.attr("action"), form.serialize(), function (res) {
+                        console.log(res);
+                        if (res.result == 'success') {
+                            $('#image-loader').fadeOut();
+                            $('#message-warning').hide();
+                            $('#contactForm').fadeOut();
+                            $('#message-success').fadeIn();
+                        }
+                        // There was an error
+                        else {
+                            $('#image-loader').fadeOut();
+                            $('#message-warning').html(msg);
+                            $('#message-warning').fadeIn();
+                        }
+                    });
+                })
+            }
+            )(jQuery);
+        </script>
+    </div>
+  </body>
 </html>
