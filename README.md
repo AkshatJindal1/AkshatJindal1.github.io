@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 
-[![Site preview](/public/social-image.PNG)](https://jefferyjohn.github.io/)
+[![Site preview](/public/preview.PNG)](https://akshatjindal1.github.io/)
 
 ## Technology Stack
 

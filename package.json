@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://AkshatJindal1.github.io/AkshatJindal.github.io/",
+  "homepage": "https://AkshatJindal1.github.io",
   "private": true,
   "dependencies": {
     "@microlink/react": "^5.2.2",
@@ -33,7 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
