@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Site preview](/public/social-image.PNG)](https://jefferyjohn.github.io/)
 
-## Available Scripts
+## Technology Stack
 
-In the project directory, you can run:
+Dependencies defined in package.json:
 
-### `yarn start`
+[Reactjs](https://reactjs.org/) | [Bootstrap](https://getbootstrap.com/) |
+[Typist](https://github.com/jstejada/react-typist) |
+[GitHub API](https://developer.github.com/v3/repos/) |
+[Instagram API](https://www.instagram.com/developer/embedding/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Sharing
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Project is open source, and was based on work by @hashirshoaeb that can be found
+[here](https://github.com/hashirshoaeb/home).
 
-### `yarn test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You should have [Node.js](https://nodejs.org/en/) and
+[Git](https://git-scm.com/) installed on your PC. You should also own a GitHub
+account.
 
-### `yarn build`
+## Setup And Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. To Get Started, Fork this repository to your GitHub account:
+2. Clone the forked repo from your account using:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+      git clone https://github.com/<your-username>/home.git
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Open in editor and edit
+   [src/editable-stuff/configurations.json](./src/editable-stuff/configurations.json)
+   file.
 
-### `yarn eject`
+4. Add your resume as <resume.pdf> in place of
+   [src/editable-stuff/resume.pdf](./src/editable-stuff/)
+5. Change URL in [package.json](./package.json) file:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ```json
+    "homepage": "https://<your-username>.github.io/home"
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Or for custom deployment, refer
+    [create-react-app.dev](https://create-react-app.dev/docs/deployment/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+6. Edit [title](./public/index.html#L34) and meta
+   [description](./public/index.html#L13) in
+   [public/index.html](./public/index.html).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+7. After editing run the following bash commands:
 
-## Learn More
+    ```bash
+    npm install
+    npm start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+8. To deploy website run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+     npm run build
+    ```
 
-### Code Splitting
+    ```bash
+     yarn add --dev gh-pages
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+     yarn run deploy
+    ```
 
-### Analyzing the Bundle Size
+    For custom deployment, refer [pages.js](./pages.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```bash
+     npm run custom-deploy
+    ```
 
-### Making a Progressive Web App
+9. Congrats your site is up and running. To see it live, visit:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```https
+      https://<your-username>.github.io/home
+    ```
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[LGPL-3.0](https://www.gnu.org/licenses/lgpl-3.0.en.html)
